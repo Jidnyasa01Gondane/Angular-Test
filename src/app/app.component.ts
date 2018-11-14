@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { summaryFileName } from '@angular/compiler/src/aot/util';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newtestapp';
+  result = 0;
+
+  assignValue() {
+    this.result = 10;
+  }
+
+  sum(a,b):number {
+    return a+b;
+  }
+
+  
 }
+
+
